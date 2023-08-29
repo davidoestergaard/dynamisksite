@@ -27,6 +27,44 @@ a{
 /*Produktliste*/
 
 .produktlistecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.produktlistecontainer img {
+    max-width: 100%;
+    height: auto;
+}
+.smallProduct,
+.smallProductonsale,
+.smallProductsoldout,
+.smallProductsoldoutonsale{
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.onsale {
+    left: 10px;
+    background-color: #44962a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.soldout {
+    left: 10px;
+    background-color: #df1f1f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/*.produktlistecontainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
@@ -38,12 +76,9 @@ a{
     margin: 20px;
 }
 
-.produktliste img {
-    max-width: 100%;
-    height: auto;
-}
 
-.rabat-skilt {
+
+.onsale {
     left: 10px;
     background-color: #44962a;
     color: white;
@@ -52,7 +87,7 @@ a{
     font-weight: bold;
 }
 
-.udsolgt {
+.soldout {
     left: 10px;
     background-color: #df1f1f;
     color: white;
@@ -92,6 +127,7 @@ a{
     color: #000000;
     font-weight: bold;
 }
+
 
 
 

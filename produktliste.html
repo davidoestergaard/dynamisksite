@@ -12,25 +12,31 @@
     <header></header>
 
     <main>
-      
-      <template id="smallProductTemplate"> 
-        <article class="smallProduct">
-  <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="haha">
-  <h3> Blue T20 Indian </h3>
-  <p class="subtle"> dsf </p>
-  <p class="price"> dsf <span> prov </span> pris </p>
-  <div class="discounted">
-    <p> Now DKK 123 </p> 
-  <p> 34% </p>
+      <div class="produktlistecontainer">
+        <template id="smallProductTemplate">
+          <article class="smallProduct">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+              alt=""
+            />
+            <div class="soldout">UDSOLGT</div>
+            <h3>Blue T20 Indian</h3>
+            <p class="subtle">T-shirts</p>
+            <p class="price"><span> Prev. </span>DKK 1000 Kr.</p>
 
-  </div>
-<a href="produkt.html"> Read </a>
-        </article>
-      </template>
-
+            
+            <div class="onsale">
+              <p class="p2">NOW</p>
+              <p class="p3">Now DKK 500 kr.</p>
+              <p class="p4">50%</p>
+            </div>
+            <a class="read-more" href="produkt.html"> Read More</a>
+          </article>
+        </template>
+      </div>
     </main>
 
-    <script src="productlist.js"> </script>
+    <script src="/js/productlist.js"></script>
     <footer></footer>
   </body>
 </html>
