@@ -36,9 +36,9 @@ a{
     height: auto;
 }
 .smallProduct,
-.smallProductonsale,
-.smallProductsoldout,
-.smallProductsoldoutonsale{
+.smallProduct .onsale,
+.smallProduct .soldout,
+.smallProduct .soldout .onsale{
     flex-basis: calc(50% - 20px);
     margin-bottom: 20px;
     padding: 10px;

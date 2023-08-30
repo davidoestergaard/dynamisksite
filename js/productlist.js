@@ -29,18 +29,21 @@ function showProduct(product){
     
     if (product.soldout) {
    // prodyktet er udsolgt 
-   copy.querySelector("article").classList.add("sold-out-text")
+   copy.querySelector("article").classList.add("soldout");
+} else {
+    copy.querySelector(".soldout").remove();
 }
 
     copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
 
+    
 if (product.discount){
    // produktet er på udsalg 
- 
+   copy.querySelector("article").classList.add("onsale");
 
    copy.querySelector("p.p3").textContent=product.price-(product.price/100)* product.discount;
    copy.querySelector("p.p4").textContent= product.discount + "%";
-   copy.querySelector("p.p4").textContent= product.discount + "%";
+
 } else{
    copy.querySelector(".onsale").remove();
 }
